@@ -1,0 +1,38 @@
+@model Employees
+
+<form asp-action="Create" asp-asp-controller="Employees" method="POST" enctype="multipart/form-data">
+
+   <div class="form-group">
+        <label asp-for="ID"></label>
+        <input type="number" asp-for="ID" class="form-control" placeholder="ID" />
+        <span asp-validation-for="ID" class="text-danger"> </span>
+    </div>
+ 
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input type="text" asp-for="Name" class="form-control" placeholder="Name" />
+        <span asp-validation-for="Name" class="text-danger"> </span>
+    </div>
+
+      <div class="form-group">
+        <label asp-for="Salary"></label>
+        <input type="text" asp-for="Salary" class="form-control" placeholder="Salary" />
+        <span asp-validation-for="Salary" class="text-danger"> </span>
+    </div>  
+
+
+        <div class="form-group">
+     
+        <input type="file"  name="myfile" class="form-control" placeholder="Salary" />
+     
+    </div>  
+
+
+
+
+    <div class="form-group">
+        <button class="btn btn-primary"> Create .. </button>
+    </div>
+   
+
+</form>
